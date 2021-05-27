@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+	<title>CSS Exercise</title>
+	<link rel="stylesheet" type="text/css" href="styletransitions.css">
+	<script>
+
+		window.addEventListener('load', (event) => {
+			console.log('page is fully loaded');
+			let overlay = document.querySelectorAll('.base');
+			overlay.forEach(element => {
+				element.visibility = visible;
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<main>
+		<section class="picture-gallery">
+			<h1>The City of Toronto</h1>
+			<h2>Historical Sites and More</h2>
+			<div class="sites">
+				<div class="pictures">
+					<div class="row">
+						<div class="base first">
+							<img src="./assets/city-skyline.jpg" width="400" height="300" alt="Toronto Skyline"
+								role="none" class="picture">
+							<div class="overlay" aria-label="See all photos">
+								<h2>Toronto</h2>
+								<p>The Skyline</p>
+							</div>
+						</div>
+						<div class="base other">
+							<img src="./assets/old-city-hall.jpg" width="400" height="600" alt="Old City Hall"
+								role="none" class="picture">
+							<div class="overlay" aria-label="See all photos">
+								<h2>Old City Hall</h2>
+								<p>The Clock Tower</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="base other">
+							<img src="./assets/cn-tower.jpg" width="400" height="600" alt="CN Tower" role="none"
+								class="picture">
+							<div class="overlay" aria-label="See all photos">
+								<h2>CN Tower</h2>
+								<p>One of the Worlds Tallest Towers</p>
+							</div>
+						</div>
+						<div class="base other">
+							<img src="./assets/rom.jpg" width="400" height="300" alt="Royal Ontario Museum" role="none"
+								class="picture">
+							<div class="overlay" aria-label="See all photos">
+								<h2>Royal Ontario Museum</h2>
+								<p>Most visited Museum in Canada</p>
+							</div>
+						</div>
+
+					</div>
+					<div class="col">
+						<div class="base other">
+							<img src="./assets/rogers-center.jpg" width="400" height="300" alt="Rogers Center"
+								role="none" class="picture">
+							<div class="overlay" aria-label="See all photos">
+								<h2>Rogers Center</h2>
+								<p>Toronto's iconic skydome</p>
+							</div>
+						</div>
+						<div class="base other">
+							<img src="./assets/new-city-hall.jpg" width="400" height="600" alt="New City Hall"
+								role="none" class="picture">
+							<div class="overlay" aria-label="See all photos">
+								<h2>New City Hall</h2>
+								<p>A Brutalist Architecture Masterpiece</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
+
+</html>
